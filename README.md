@@ -56,6 +56,6 @@ git add . && git commit -m "init" (After Changes)
 git config --global user.email "user@email.com" (set what email is doing the update)
 git config --global user.name "Laptop" (name of the user doing it)
 (then rerun the git add)
-git push
-then edit install.conf.yaml 
-or dont git push edit in Linux then git push!
+git push (sometimes you will need to rerun ssh -T git@github.com to run this) <br />
+then edit install.conf.yaml <br />
+`(or dont git push edit in Linux then git push!)`<br />
