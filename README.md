@@ -48,7 +48,7 @@ Dotbot and connecting my GitHub to my Linux ssh! <br />
 **`Connecting to github`** <br />
 ssh-keygen -t ed25519 <br />
 cat ~/.ssh/id_ed25519.pub <br />
-Copy and paste it to the ssh keys section of GitHub <br ?>
+Copy and paste it to the ssh keys section of GitHub <br />
 ssh -T git@github.com (Connect) <br />
 **`Push changes to repo and getting repos to push`** <br />
 git clone git@github.com:FishyStix12/dotfishingbot.git <br /> (example Git clone of repositories to push updates) <br />
