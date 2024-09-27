@@ -51,8 +51,8 @@ Copy and paste it to the ssh keys section of GitHub
 git clone git@github.com:FishyStix12/dotfishingbot.git
 ssh -T git@github.com (Connect)
 git add . && git commit -m "init" (After Changes)
-git config --global user.email "nicholasjoefisher@outlook.com" (set what email is doing the update)
-git config --global user.name "Laptop" (name of the user doing it
+git config --global user.email "user@email" (set what email is doing the update)
+git config --global user.name "Laptop" (name of the user doing it)
 (then rerun the git add)
 git push
 then edit install.conf.yaml 
