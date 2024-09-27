@@ -1,0 +1,18 @@
+- clean: [~]
+- link: 
+    ~/Base-Script:
+    ~/C-Essentials:
+    ~/Config:
+    ~/Embomber:
+    ~/.go:
+    ~/Go:
+    ~/Python:
+    ~/ReconDog:
+    ~/Ruby:
+    ~/SEToolkit:
+    ~/Themes:
+    ~/sherlock:
+    ~/Desktops:
+    ~/toxic-minimal-static-musl_linux_x86-64:
+    ~/configdots:
+- shell: []

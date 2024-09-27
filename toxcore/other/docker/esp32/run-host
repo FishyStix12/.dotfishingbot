@@ -1,5 +1,0 @@
-#!/bin/sh
-
-set -eux
-
-bazel run //c-toxcore/other/docker/esp32:host_main
