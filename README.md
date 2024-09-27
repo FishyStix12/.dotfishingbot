@@ -59,3 +59,10 @@ git config --global user.name "Laptop" (name of the user doing it) <br />
 git push (sometimes you will need to rerun ssh -T git@github.com to run this) <br />
 then edit install.conf.yaml <br />
 `(or dont git push edit in Linux then git push!)`<br />
+
+**`Important Note:`** <br />
+If it won't let you push because they try to enforce a username and password which no longer works in github since 2021. It means you are using an `https URL` instead of an `SSH URL`for your repository instead of the https URL. <br />
+To switch to SSH, do these tasks: <br />
+In dotfishingbot main click `Code -> SSH -> copy` <br />
+git remote set-url origin `what you copied in ssh tab on Github repo` <br />
+
