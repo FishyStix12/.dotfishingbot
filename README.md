@@ -50,12 +50,12 @@ ssh-keygen -t ed25519 <br />
 cat ~/.ssh/id_ed25519.pub <br />
 Copy and paste it to the ssh keys section of GitHub <br ?>
 ssh -T git@github.com (Connect) <br />
-**`Push changes to repo and getting repos to push`**
-git clone git@github.com:FishyStix12/dotfishingbot.git <br /> (example Git clone of repositories to push updates)
-git add . && git commit -m "init" (After Changes)
-git config --global user.email "user@email.com" (set what email is doing the update)
-git config --global user.name "Laptop" (name of the user doing it)
-(then rerun the git add)
+**`Push changes to repo and getting repos to push`** <br />
+git clone git@github.com:FishyStix12/dotfishingbot.git <br /> (example Git clone of repositories to push updates) <br />
+git add . && git commit -m "init" (After Changes) <br />
+git config --global user.email "user@email.com" (set what email is doing the update) <br />
+git config --global user.name "Laptop" (name of the user doing it) <br />
+(then rerun the git add) <br />
 git push (sometimes you will need to rerun ssh -T git@github.com to run this) <br />
 then edit install.conf.yaml <br />
 `(or dont git push edit in Linux then git push!)`<br />
