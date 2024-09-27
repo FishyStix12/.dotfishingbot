@@ -44,14 +44,16 @@ whatever you want with it without restriction. See `LICENSE.md` for details.
 That being said, I would appreciate it if you could maintain a link back to
 Dotbot (or this repository) to help other people discover Dotbot.
 
-
-ssh-keygen -t ed25519
-cat ~/.ssh/id_ed25519.pub
-Copy and paste it to the ssh keys section of GitHub 
-git clone git@github.com:FishyStix12/dotfishingbot.git
-ssh -T git@github.com (Connect)
+Dotbot and connecting my GitHub to my Linux ssh! <br />
+**`Connecting to github`** <br />
+ssh-keygen -t ed25519 <br />
+cat ~/.ssh/id_ed25519.pub <br />
+Copy and paste it to the ssh keys section of GitHub <br ?>
+ssh -T git@github.com (Connect) <br />
+**`Push changes to repo and getting repos to push`**
+git clone git@github.com:FishyStix12/dotfishingbot.git <br /> (example Git clone of repositories to push updates)
 git add . && git commit -m "init" (After Changes)
-git config --global user.email "user@email" (set what email is doing the update)
+git config --global user.email "user@email.com" (set what email is doing the update)
 git config --global user.name "Laptop" (name of the user doing it)
 (then rerun the git add)
 git push
