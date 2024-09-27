@@ -1,3 +1,17 @@
-- clean: []
-- link: {}
+- clean: [~]
+- link: 
+  ~/Base-Script:
+  ~/C-Essentials:
+  ~/Config:
+  ~/Embomber:
+  ~/.go:
+  ~/Go:
+  ~/Python:
+  ~/ReconDog:
+  ~/Ruby:
+  ~/SEToolkit:
+  ~/Themes:
+  ~/sherlock:
+  ~/tox:
+  ~/toxcore:
 - shell: []
