@@ -23,7 +23,7 @@ To switch to SSH, do these tasks: <br />
 In dotfishingbot main click `Code -> SSH -> copy` <br />
 git remote set-url origin `what you copied in ssh tab on Github repo` <br />
 
-#Dotbot Post Configuration <br />
+# Dotbot Post Configuration <br />
 ![image](https://github.com/user-attachments/assets/b969b53f-274a-4e8b-b2f2-43f3b2ae86ad) <br />
 **To set up dotbot environment for your Kali Linux machine download the repository cd into it and run `./install` switch to home directory and then run `./kaliconfigdots/dotkaliconf.sh`** <br />
 # Configuration commands to run afterwards: <br />
