@@ -1,7 +1,7 @@
 # What is Dotbot and How to connect dotbot to linux instance!
 # By: Nicholas Fisher 
 ![image](https://github.com/user-attachments/assets/848e208a-db9a-467f-9e4b-cafdcfa05d5c) <br />
-***What is Dotbot:*** <br />
+# ***What is Dotbot:*** <br />
 A Dotbot is a configuration management tool designed to automate the setup of dotfiles and other personal configuration files on a system. It simplifies the process of managing and syncing these files across different machines. Here’s a brief overview of its features and functionality:<br />
 **Key Features of Dotbot**<br />
 1. **Dotfile Management**: Dotbot allows users to specify which dotfiles (like `.bashrc`, `.vimrc`, etc.) should be linked or copied to their home directory, making it easy to set up a consistent environment.<br />
@@ -17,7 +17,7 @@ A Dotbot is a configuration management tool designed to automate the setup of do
 **Conclusion** <br />
 Dotbot is an efficient solution for managing dotfiles and automating the setup of personal configurations, making it easier for users to maintain a consistent development environment across multiple systems. <br />
 
-***Dotbot and connecting my GitHub to my Linux ssh!*** <br />
+# ***Dotbot and connecting my GitHub to my Linux ssh!*** <br />
 **`Connecting to github`** <br />
 ssh-keygen -t ed25519 <br />
 cat ~/.ssh/id_ed25519.pub <br />
