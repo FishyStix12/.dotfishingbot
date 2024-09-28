@@ -63,7 +63,8 @@ sudo apt install slim
 sudo apt install sway
 echo "================================================================================="
 echo "Important Information:"
-echo "This script is about to take you to change you desktop environment"
+echo "This script is about to take you to change you desktop environment, if you do not"
+Echo " want to change press Ctrl+C."
 echo "================================================================================="
 # Pause for user input
 read -p "Press Enter to continue..."
