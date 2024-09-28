@@ -5,9 +5,6 @@ chmod +x ~/*
 # Download the Discord .deb package
 wget -v "https://discord.com/api/download?platform=linux&format=deb" -O "discord-deb.deb"
 
-# Download the Opera browser .deb package
-wget -v "https://download.opera.com/download/get/?id=65262&location=415&nothanks=yes&sub=marine&utm_tryagain=yes" -O "opera-stable_deb.deb"
-
 # Install Opera and Discord using dpkg
 sudo dpkg -i opera-stable_*
 sudo dpkg -i discord-*
