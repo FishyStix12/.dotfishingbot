@@ -28,6 +28,7 @@ sudo apt-get install webhttrack -y
 sudo apt install snapd -y
 sudo snap install core
 sudo snap install gephi
+chmod +x *
 #(For etc installs)
 sudo apt-get full-upgrade -y
 # Uncomment if setting up Kali Linux Server 
