@@ -46,8 +46,8 @@ Dotbot (or this repository) to help other people discover Dotbot.
 
 # How to connect and edit git from linux
 # By: Nicholas Fisher 
-
-Dotbot and connecting my GitHub to my Linux ssh! <br />
+![image](https://github.com/user-attachments/assets/848e208a-db9a-467f-9e4b-cafdcfa05d5c) <br />
+***Dotbot and connecting my GitHub to my Linux ssh!*** <br />
 **`Connecting to github`** <br />
 ssh-keygen -t ed25519 <br />
 cat ~/.ssh/id_ed25519.pub <br />
