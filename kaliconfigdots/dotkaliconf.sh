@@ -55,12 +55,12 @@ chmod +x Darkshark24Themes.sh
 ./DarksharkThemes.sh
 echo $XDG_CURRENT_DESKTOP
 sudo apt install -y kali-desktop-gnome
-sudo apt install lightdm
-sudo apt install sddm
-sudo apt install xdm
-sudo apt install lxdm
-sudo apt install slim
-sudo apt install sway
+sudo apt install -y lightdm
+sudo apt install -y sddm
+sudo apt install -y xdm
+sudo apt install -y lxdm
+sudo apt install -y slim
+sudo apt install -y sway
 echo "================================================================================="
 echo "Important Information:"
 echo "This script is about to take you to change you desktop environment, if you do not"
