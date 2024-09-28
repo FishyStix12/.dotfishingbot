@@ -1,3 +1,4 @@
+#!/bin/bash
 # Run this after connecting to keyboard via bluetooth
 echo "================================================================================="
 echo "Important Information:"
