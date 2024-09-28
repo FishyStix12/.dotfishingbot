@@ -20,10 +20,10 @@ rm discord-*
 cd ~/Go/Config
 ./goconfig.sh
 ./gomods.sh
-
+cd 
 # Go back to the home directory
 cd ~
-
+./Python/PyLib/pylib_config.sh
 # Install Python dependencies and useful terminal tools
 sudo apt-get install python-requests
 sudo apt-get install python-dnspython
