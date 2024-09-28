@@ -44,6 +44,9 @@ whatever you want with it without restriction. See `LICENSE.md` for details.
 That being said, I would appreciate it if you could maintain a link back to
 Dotbot (or this repository) to help other people discover Dotbot.
 
+# How to connect and edit git from linux
+# By: Nicholas Fisher 
+
 Dotbot and connecting my GitHub to my Linux ssh! <br />
 **`Connecting to github`** <br />
 ssh-keygen -t ed25519 <br />
@@ -66,3 +69,4 @@ To switch to SSH, do these tasks: <br />
 In dotfishingbot main click `Code -> SSH -> copy` <br />
 git remote set-url origin `what you copied in ssh tab on Github repo` <br />
 
+**To set up dotbot environment download the repository cd into it and run `./install.`** <br />
