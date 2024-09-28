@@ -1,4 +1,4 @@
-# Go to line 73 to and remove the "#" and speace to get the kalio linux everything metapackage
+# Go to line 72 to and remove the "#" and speace to get the kalio linux everything metapackage
 # Update the package list
 sudo apt-get update
 chmod +x ~/*
