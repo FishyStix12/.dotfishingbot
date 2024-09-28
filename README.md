@@ -1,4 +1,4 @@
-# How to connect and edit git from linux
+# How to connect and edit git from linux instance!
 # By: Nicholas Fisher 
 ![image](https://github.com/user-attachments/assets/848e208a-db9a-467f-9e4b-cafdcfa05d5c) <br />
 ***Dotbot and connecting my GitHub to my Linux ssh!*** <br />
