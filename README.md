@@ -54,7 +54,7 @@ cat ~/.ssh/id_ed25519.pub <br />
 Copy and paste it to the ssh keys section of GitHub <br />
 ssh -T git@github.com (Connect) <br />
 **`Push changes to repo and getting repos to push`** <br />
-git clone git@github.com:FishyStix12/dotfishingbot.git <br /> (example Git clone of repositories to push updates) <br />
+git clone git@github.com:FishyStix12/.dotfishingbot.git <br /> (example Git clone of repositories to push updates) <br />
 git add . && git commit -m "init" (After Changes) <br />
 git config --global user.email "user@email.com" (set what email is doing the update) <br />
 git config --global user.name "Laptop" (name of the user doing it) <br />
