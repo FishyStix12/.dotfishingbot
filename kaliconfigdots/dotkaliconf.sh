@@ -71,8 +71,7 @@ sudo nano /usr/share/applications/sway.desktop
 # Display important information
 echo "================================================================================="
 echo "Important Information:"
-echo "This script is about to change your desktop environment. If you do not want to change,"
-echo "press Ctrl+C to abort."
+echo -e "This script is about to change your desktop environment. If you do not want to change,\npress Ctrl+C to abort."
 echo "================================================================================="
 
 # Pause for user input
