@@ -70,7 +70,8 @@ These errors typically occur when there are changes in the remote repository tha
 ## Conclusion <br />
 By using the commands listed above, you can effectively manage and resolve issues related to pulling and pushing in Git. This will ensure a smoother collaboration process in your Git workflow. <br />
 
-.Dotfiles Template
+# .Dotfiles Template
+# By: anishathalye
 =================
 
 This is a template repository for bootstrapping your dotfiles with [Dotbot][dotbot].
