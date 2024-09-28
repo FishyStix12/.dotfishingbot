@@ -1,10 +1,9 @@
 - clean: [~]
 - link: 
-    ~/Base-Script:
+    ~/Bash-Script:
     ~/C-Essentials:
     ~/Config:
-    ~/Embomber:
-    ~/.go:
+    ~/EmBomber:
     ~/Go:
     ~/Python:
     ~/ReconDog:
