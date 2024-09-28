@@ -1,3 +1,4 @@
+#!/bin/bash
 cd ~
 #Tox setup
 #Grabs the file from the download link
