@@ -108,6 +108,7 @@ echo $XDG_CURRENT_DESKTOP
 
 # Install desktop environments and display managers
 sudo apt install -y kali-desktop-gnome lightdm
+sudo apt install i3 
 sudo apt install i3status i3lock dmenu -y
 
 
@@ -145,9 +146,6 @@ echo "==========================================================================
 read -p "Press Enter to continue..."
 
 # Set passwords for users
-echo "FishyStix/Kali passwd:"
-passwd
-echo "darkshark24 passwd:"
 passwd darkshark24
 
 # Open the sudoers file for editing
