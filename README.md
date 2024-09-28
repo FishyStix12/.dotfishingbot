@@ -1,6 +1,22 @@
-# How to connect dotbot to linux instance!
+# What is Dotbot and How to connect dotbot to linux instance!
 # By: Nicholas Fisher 
 ![image](https://github.com/user-attachments/assets/848e208a-db9a-467f-9e4b-cafdcfa05d5c) <br />
+***What is Dotbot:*** <br />
+A Dotbot is a configuration management tool designed to automate the setup of dotfiles and other personal configuration files on a system. It simplifies the process of managing and syncing these files across different machines. Here’s a brief overview of its features and functionality:<br />
+**Key Features of Dotbot**<br />
+1. **Dotfile Management**: Dotbot allows users to specify which dotfiles (like `.bashrc`, `.vimrc`, etc.) should be linked or copied to their home directory, making it easy to set up a consistent environment.<br />
+2. **Configuration Files**: Dotbot uses a YAML configuration file (`install.conf.yaml` by default) where users define the dotfiles to manage, as well as any other setup commands or scripts. <br />
+3. **Custom Commands**: Users can include custom commands that should run during the setup process, such as installing software or applying additional configurations. <br />
+4. **Version Control Integration**: By storing dotfiles in a version control system like Git, users can easily track changes, revert to previous versions, and share their configuration across multiple machines. <br />
+5. **Simplicity**: Dotbot is designed to be simple to use, allowing users to quickly set up their environment without complex scripts or manual configuration. <br />
+**Typical Workflow**
+1. **Create a Dotfiles Repository**: Users create a repository (often on GitHub) to store their dotfiles. <br />
+2. **Write a Configuration File**: A YAML file specifies which dotfiles to link and any additional setup commands. <br />
+3. **Run Dotbot**: Executing Dotbot runs the configuration, linking files and applying any specified commands.<br />
+4. **Sync Across Machines**: Users can clone their dotfiles repository on a new machine and run Dotbot to set up their environment quickly. <br />
+**Conclusion** <br />
+Dotbot is an efficient solution for managing dotfiles and automating the setup of personal configurations, making it easier for users to maintain a consistent development environment across multiple systems. <br />
+
 ***Dotbot and connecting my GitHub to my Linux ssh!*** <br />
 **`Connecting to github`** <br />
 ssh-keygen -t ed25519 <br />
