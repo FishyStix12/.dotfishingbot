@@ -55,7 +55,18 @@ chmod +x Darkshark24Themes.sh
 ./DarksharkThemes.sh
 echo $XDG_CURRENT_DESKTOP
 # Install the necessary desktop environments and display managers
-sudo apt install -y kali-desktop-gnome lightdm sddm xdm lxdm slim sway
+sudo apt install -y kali-desktop-gnome lightdm 
+sudo apt install sway swaybg swaylock
+# Display important information
+echo "================================================================================="
+echo "Important Information:"
+echo "Please copy and paste the information below into the file that will soon open:"
+echo -e "[Desktop Entry]\nName=Sway\nExec=sway\nType=Application"
+echo "================================================================================="
+
+# Pause for user input
+read -p "Press Enter to continue..."
+sudo nano /usr/share/applications/sway.desktop
 
 # Display important information
 echo "================================================================================="
@@ -69,6 +80,11 @@ read -p "Press Enter to continue..."
 
 # Update alternatives for the session manager
 sudo update-alternatives --config x-session-manager
-
+echo "================================================================================="
+echo "Important Information:"
+echo -e "Please make the changes below in th /etc/ssh/sshd_config file for ssh:n\#MaxAuthTries 10n\#MaxSessions 3n\PasswordAuthentication yes"
+echo "================================================================================="
+read -p "Press Enter to continue..."
+nano /etc/ssh/sshd_config
 # Reboot the system to apply changes
 sudo reboot
