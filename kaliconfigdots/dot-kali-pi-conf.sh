@@ -107,18 +107,8 @@ echo $XDG_CURRENT_DESKTOP
 
 # Install desktop environments and display managers
 sudo apt install -y kali-desktop-gnome lightdm
-sudo apt install sway swaybg swaylock
+sudo apt install i3status i3lock dmenu -y
 
-# Display important information to the user
-echo "================================================================================="
-echo "Important Information:"
-echo "Please copy and paste the information below into the file that will soon open:"
-echo -e "[Desktop Entry]\nName=Sway\nExec=sway\nType=Application"
-echo "================================================================================="
-
-# Pause and wait for the user to press Enter
-read -p "Press Enter to continue..."
-sudo nano /usr/share/applications/sway.desktop
 
 # Display more important information to the user
 echo "================================================================================="
