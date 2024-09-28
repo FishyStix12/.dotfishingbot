@@ -1,3 +1,4 @@
+#!/bin/bash
 # Go to line 72 to and remove the "#" and speace to get the kalio linux everything metapackage
 # Update the package list
 sudo apt-get update
@@ -117,6 +118,7 @@ echo -e "This script is about to change your desktop environment. If you do not 
 echo "================================================================================="
 
 # Pause for user input before proceeding
+echo "Please chose i3"
 read -p "Press Enter to continue..."
 
 # Update session manager alternatives
