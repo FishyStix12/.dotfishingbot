@@ -40,7 +40,7 @@ git remote set-url origin `what you copied in ssh tab on Github repo` <br />
 `./kaliconfigdots/after-bluetooth-piconf.sh` <br />
 
 # Git Troubleshooting Guide
-
+![image](https://github.com/user-attachments/assets/9081fffc-d0ec-40a3-b773-cdbd0635cf17)
 ## Overview
 
 This guide provides a set of commands for troubleshooting common issues when pulling and pushing changes in Git, particularly when encountering divergent branches.
