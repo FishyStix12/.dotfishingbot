@@ -1,6 +1,6 @@
 - clean: [~]
 - link: 
-    ~/Bash-Script:
+    ~/Bash-Scripts:
     ~/C-Essentials:
     ~/Config:
     ~/EmBomber:
