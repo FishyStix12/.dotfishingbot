@@ -36,3 +36,7 @@ wget https://raw.githubusercontent.com/FishyStix12/ConfigFisherDebian/main/13392
 wget https://raw.githubusercontent.com/FishyStix12/ConfigFisherDebian/main/Darkshark24Themes.sh
 chmod +x Darkshark24Themes.sh
 ./DarksharkThemes.sh
+sudo apt update
+sudo apt install gdm3
+sudo dpkg-reconfigure gdm3
+sudo reboot
