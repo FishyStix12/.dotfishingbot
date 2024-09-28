@@ -1,4 +1,4 @@
-# How to connect and edit git from linux instance!
+# How to connect dotbot to linux instance!
 # By: Nicholas Fisher 
 ![image](https://github.com/user-attachments/assets/848e208a-db9a-467f-9e4b-cafdcfa05d5c) <br />
 ***Dotbot and connecting my GitHub to my Linux ssh!*** <br />
@@ -9,14 +9,18 @@ Copy and paste it to the ssh keys section of GitHub <br />
 ssh -T git@github.com (Connect) <br />
 **`Push changes to repo and getting repos to push`** <br />
 git clone git@github.com:FishyStix12/.dotfishingbot.git <br /> (example Git clone of repositories to push updates) <br />
-git add . && git commit -m "init" (After Changes) <br />
-git config --global user.email "user@email.com" (set what email is doing the update) <br />
-git config --global user.name "Laptop" (name of the user doing it) <br />
-(then rerun the git add) <br />
-git push (sometimes you will need to rerun ssh -T git@github.com to run this) <br />
-then edit install.conf.yaml <br />
-`(or dont git push edit in Linux then git push!)`<br />
 
+# Pushing Dotbot Git <br />
+![image](https://github.com/user-attachments/assets/d64b6853-8c62-4c7c-aa2c-a6710c69fab4) <br />
+**Ensure install.conf.yaml is updated to reflect new repositories before pushing!** <br />
+`git add . && git commit -m "init" (After Changes)` <br />
+**If it needs your userid and email for the push execute the following commands:** <br />
+`git config --global user.email "user@email.com"` **(Set what email is doing the update)* <br />
+`git config --global user.name "Laptop"` **(Name of the user doing it)* <br />
+*(Then rerun the git add)* <br />
+`git push` (Sometimes you will need to rerun ssh -T git@github.com to run this)* <br />
+*then edit install.conf.yaml <br />
+`(or dont git push edit in Linux then git push!)`<br />
 **`Important Note:`** <br />
 If it won't let you push because they try to enforce a username and password which no longer works in github since 2021. It means you are using an `https URL` instead of an `SSH URL`for your repository instead of the https URL. <br />
 To switch to SSH, do these tasks: <br />
