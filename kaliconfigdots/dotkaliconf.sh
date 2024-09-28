@@ -54,19 +54,21 @@ chmod +x toxcore/*
 chmod +x Darkshark24Themes.sh
 ./DarksharkThemes.sh
 echo $XDG_CURRENT_DESKTOP
-sudo apt install -y kali-desktop-gnome
-sudo apt install -y lightdm
-sudo apt install -y sddm
-sudo apt install -y xdm
-sudo apt install -y lxdm
-sudo apt install -y slim
-sudo apt install -y sway
+# Install the necessary desktop environments and display managers
+sudo apt install -y kali-desktop-gnome lightdm sddm xdm lxdm slim sway
+
+# Display important information
 echo "================================================================================="
 echo "Important Information:"
-echo "This script is about to take you to change you desktop environment, if you do not"
-Echo " want to change press Ctrl+C."
+echo "This script is about to change your desktop environment. If you do not want to change,"
+echo "press Ctrl+C to abort."
 echo "================================================================================="
+
 # Pause for user input
 read -p "Press Enter to continue..."
+
+# Update alternatives for the session manager
 sudo update-alternatives --config x-session-manager
+
+# Reboot the system to apply changes
 sudo reboot
