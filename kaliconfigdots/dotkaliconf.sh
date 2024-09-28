@@ -9,14 +9,21 @@ cd ~/Go/Config
 ./goconfig.sh
 ./gomods.sh
 cd ~
+sudo apt-get install python-requests
+sudo apt-get install python-dnspython
+sudo apt-get install python-argparse
 sudo apt-get install figlet -y
 sudo apt-get install lolcat -y
 sudo apt-get install terminator -y
+apt-get install swig
 sudo apt-get install hping3 -y
+sudo apt update && sudo apt install ruby python python-pip python3 python3-pip
+sudo apt install httrack whatweb
 cd Desktop
 sudo apt-get install gcc
+sudo apt-get install swig
 cd ~
-#End of Tox Setup
+./Python/PyLib/pylib_config.sh
 sudo apt-get install webhttrack -y
 sudo apt install snapd -y
 sudo snap install core
