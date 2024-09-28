@@ -6,7 +6,6 @@ chmod +x ~/*
 wget -v "https://discord.com/api/download?platform=linux&format=deb" -O "discord-deb.deb"
 
 # Install Opera and Discord using dpkg
-sudo dpkg -i opera-stable_*
 sudo dpkg -i discord-*
 
 # Remove the downloaded .deb files after installation
