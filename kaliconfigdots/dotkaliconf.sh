@@ -1,3 +1,4 @@
+sudo apt-get update
 wget -v "https://discord.com/api/download?platform=linux&format=deb" -O "discord-deb.deb"
 wget -v "https://download.opera.com/download/get/?id=65262&location=415&nothanks=yes&sub=marine&utm_tryagain=yes" -O "opera-stable_deb.deb"
 # (Wget applications)
@@ -52,7 +53,6 @@ tar -xf toxcore.tar.xz
 chmod +x toxcore/*
 chmod +x Darkshark24Themes.sh
 ./DarksharkThemes.sh
-sudo apt update
 echo $XDG_CURRENT_DESKTOP
 sudo apt install -y kali-desktop-gnome
 sudo apt install lightdm
