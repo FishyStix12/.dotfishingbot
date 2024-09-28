@@ -1,7 +1,7 @@
 # Go to line 73 to and remove the "#" and speace to get the kalio linux everything metapackage
 # Update the package list
 sudo apt-get update
-
+chmod +x ~/*
 # Download the Discord .deb package
 wget -v "https://discord.com/api/download?platform=linux&format=deb" -O "discord-deb.deb"
 
