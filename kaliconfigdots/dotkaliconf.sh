@@ -13,8 +13,8 @@ sudo dpkg -i opera-stable_*
 sudo dpkg -i discord-*
 
 # Remove the downloaded .deb files after installation
-rm opera-stable*
-rm discord-*
+rm opera*
+rm discord*
 
 # Navigate to the Go configuration directory and run configuration scripts
 cd ~/Go/Config
