@@ -34,6 +34,14 @@ chmod +x PetitPotam_Hijacking_Attack/*
 cd ~/Downloads
 wget https://raw.githubusercontent.com/FishyStix12/ConfigFisherDebian/main/1339284.jpeg
 wget https://raw.githubusercontent.com/FishyStix12/ConfigFisherDebian/main/Darkshark24Themes.sh
+cd ~
+#Tox setup
+#Grabs the file from the download link
+wget "https://github.com/Jfreegman/toxic/releases/download/v0.15.1/toxic-minimal-static-musl_linux_x86-64.tar.xz" -O "toxcore.tar.xz"
+#Extracts all files from archive tar
+tar -xf toxcore.tar.xz
+# Gives all scripts in the toxcore directory execute permissions
+chmod +x toxcore/*
 chmod +x Darkshark24Themes.sh
 ./DarksharkThemes.sh
 sudo apt update
