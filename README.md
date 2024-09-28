@@ -39,6 +39,37 @@ git remote set-url origin `what you copied in ssh tab on Github repo` <br />
 *Run below if pi for screen change for touchscreens! (If needed)* <br />
 `./kaliconfigdots/after-bluetooth-piconf.sh` <br />
 
+# Git Troubleshooting Guide
+
+## Overview
+
+This guide provides a set of commands for troubleshooting common issues when pulling and pushing changes in Git, particularly when encountering divergent branches.
+
+## Common Errors
+
+These errors typically occur when there are changes in the remote repository that your local repository doesn’t have, leading to a divergence in the commit history. This situation can arise when multiple contributors are working on the same branch. If one person pushes their changes while another has local changes that haven’t been pushed yet, Git needs to reconcile these differences. If you attempt to pull without specifying how to handle these divergences, Git will prompt you to clarify your intent, as it doesn't know whether to create a merge commit or reapply your commits on top of the incoming changes.
+
+## Table of Torubleshooting Commands: <br />
+
+| **Command**                              | **Description**                                                                                   |
+|------------------------------------------|---------------------------------------------------------------------------------------------------|
+| `git status`                             | Displays the current branch, changes to be committed, and untracked files.                       |
+| `git pull --no-rebase origin master`    | Pulls changes from the remote `master` branch, merging them with your local branch.              |
+| `git pull --rebase origin master`       | Pulls changes from the remote `master` branch and replays your local commits on top of those changes. |
+| `git add <file_with_conflict>`          | Stages a resolved file after handling merge conflicts, preparing it for the next commit.          |
+| `git commit -m "Resolved merge conflicts"` | Commits the changes after resolving merge conflicts.                                            |
+| `git push origin master`                 | Pushes your local commits to the remote `master` branch.                                        |
+| `git config --global pull.rebase false` | Sets the default pull behavior to merge for all repositories.                                   |
+| `git config --global pull.rebase true`  | Sets the default pull behavior to rebase for all repositories.                                  |
+| `git config --global pull.ff only`       | Sets the default pull behavior to fast-forward only, meaning no merges or rebases will be allowed if local changes exist. |
+| `git fetch origin`                       | Fetches changes from the remote repository without merging them into your local branch.          |
+| `git reset --hard origin/master`        | Resets your local branch to match the remote `master` branch, discarding local changes.         |
+| `git log --oneline --graph --decorate --all` | Displays a visual representation of your commit history, showing where branches diverge.       |
+| `git fetch --prune`                     | Updates the list of remote branches and removes references to branches that have been deleted.  |
+
+## Conclusion <br />
+By using the commands listed above, you can effectively manage and resolve issues related to pulling and pushing in Git. This will ensure a smoother collaboration process in your Git workflow. <br />
+
 .Dotfiles Template
 =================
 
