@@ -53,6 +53,19 @@ chmod +x toxcore/*
 chmod +x Darkshark24Themes.sh
 ./DarksharkThemes.sh
 sudo apt update
-sudo apt install gdm3
-sudo dpkg-reconfigure gdm3
+echo $XDG_CURRENT_DESKTOP
+sudo apt install -y kali-desktop-gnome
+sudo apt install lightdm
+sudo apt install sddm
+sudo apt install xdm
+sudo apt install lxdm
+sudo apt install slim
+sudo apt install sway
+echo "================================================================================="
+echo "Important Information:"
+echo "This script is about to take you to change you desktop environment"
+echo "================================================================================="
+# Pause for user input
+read -p "Press Enter to continue..."
+sudo update-alternatives --config x-session-manager
 sudo reboot
