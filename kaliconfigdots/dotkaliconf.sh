@@ -26,3 +26,13 @@ sudo apt-get full-upgrade -y
 # Uncomment if setting up Kali Linux Server 
 sudo apt install -y kali-linux-everything
 sudo apt autoremove
+cd ~/Python/ #for uploading python repositories to the source.
+wget -v "https://github.com/topotam/PetitPotam.git" -O "PetitPotam_Hijacking_Attack"
+wget -v "https://github.com/fortra/impacket.git" -O "Impacket_for_PetitPotam"
+chmod +x Impacket_for_PetitPotam/*
+chmod +x PetitPotam_Hijacking_Attack/*
+cd ~/Downloads
+wget https://raw.githubusercontent.com/FishyStix12/ConfigFisherDebian/main/1339284.jpeg
+wget https://raw.githubusercontent.com/FishyStix12/ConfigFisherDebian/main/Darkshark24Themes.sh
+chmod +x Darkshark24Themes.sh
+./DarksharkThemes.sh
