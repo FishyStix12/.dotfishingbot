@@ -130,7 +130,7 @@ echo "Important Information:"
 echo -e "Please make the changes below in the /etc/ssh/sshd_config file for ssh:\n#MaxAuthTries 10\n#MaxSessions 3\nPasswordAuthentication yes"
 echo "================================================================================="
 read -p "Press Enter to continue..."
-nano /etc/ssh/sshd_config
+sudo nano /etc/ssh/sshd_config
 
 # Create a new user and modify user settings
 sudo useradd -m -d /home/darkshark24 -s /bin/zsh darkshark24
