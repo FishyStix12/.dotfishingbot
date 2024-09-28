@@ -1,5 +1,4 @@
-982EE1EF5D88C4B4EC11EE3CB29E829B801A0F4B245BF9CA6CD7686898FB9900E0432A624F70
-Dotfiles Template
+.Dotfiles Template
 =================
 
 This is a template repository for bootstrapping your dotfiles with [Dotbot][dotbot].
