@@ -23,7 +23,9 @@ cd ~/Go/Config
 cd 
 # Go back to the home directory
 cd ~
+# install needed python packags 
 ./Python/PyLib/pylib_config.sh
+
 # Install Python dependencies and useful terminal tools
 sudo apt-get install python-requests
 sudo apt-get install python-dnspython
