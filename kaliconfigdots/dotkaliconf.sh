@@ -86,4 +86,21 @@ echo "==========================================================================
 read -p "Press Enter to continue..."
 nano /etc/ssh/sshd_config
 # Reboot the system to apply changes
+sudo useradd -m -d /home/darkshark24 -s /bin/zsh darkshark24
+sudo usermod -U darkshark24
+echo "================================================================================="
+echo "Important Information:"
+echo -e "Please enter a password for darkshark24 and kali then:"
+echo -e "Please use this as a reference on how to edit the /etc/sudoers filen\User privilege specificationn\root    ALL=(ALL:ALL) ALLn\darkshark24 ALL=(ALL:ALL) ALLn\n\Allow members of group sudo to execute any commandn\%sudo   ALL=(ALL:ALL) ALL"
+echo "================================================================================="
+read -p "Press Enter to continue..."
+passwd
+passwd darkshark24
+sudo nano /etc/sudoers
+# Changes ownership to darkshark24
+sudo chown darkshark24:darkshark24 /home/darkshark24
+# Change permissions for /home/darkshark24 to full permissions
+sudo chmod 755 /home/darkshark24
+cp -r /home/kali/* /home/darkshark24/
+
 sudo reboot
