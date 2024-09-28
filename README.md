@@ -1,3 +1,40 @@
+# How to connect and edit git from linux
+# By: Nicholas Fisher 
+![image](https://github.com/user-attachments/assets/848e208a-db9a-467f-9e4b-cafdcfa05d5c) <br />
+***Dotbot and connecting my GitHub to my Linux ssh!*** <br />
+**`Connecting to github`** <br />
+ssh-keygen -t ed25519 <br />
+cat ~/.ssh/id_ed25519.pub <br />
+Copy and paste it to the ssh keys section of GitHub <br />
+ssh -T git@github.com (Connect) <br />
+**`Push changes to repo and getting repos to push`** <br />
+git clone git@github.com:FishyStix12/.dotfishingbot.git <br /> (example Git clone of repositories to push updates) <br />
+git add . && git commit -m "init" (After Changes) <br />
+git config --global user.email "user@email.com" (set what email is doing the update) <br />
+git config --global user.name "Laptop" (name of the user doing it) <br />
+(then rerun the git add) <br />
+git push (sometimes you will need to rerun ssh -T git@github.com to run this) <br />
+then edit install.conf.yaml <br />
+`(or dont git push edit in Linux then git push!)`<br />
+
+**`Important Note:`** <br />
+If it won't let you push because they try to enforce a username and password which no longer works in github since 2021. It means you are using an `https URL` instead of an `SSH URL`for your repository instead of the https URL. <br />
+To switch to SSH, do these tasks: <br />
+In dotfishingbot main click `Code -> SSH -> copy` <br />
+git remote set-url origin `what you copied in ssh tab on Github repo` <br />
+
+#Dotbot Post Configuration <br />
+![image](https://github.com/user-attachments/assets/b969b53f-274a-4e8b-b2f2-43f3b2ae86ad) <br />
+**To set up dotbot environment for your Kali Linux machine download the repository cd into it and run `./install` switch to home directory and then run `./kaliconfigdots/dotkaliconf.sh`** <br />
+# Configuration commands to run afterwards: <br />
+`cd ~/kaliconfigdots/` <br />
+`./kaliconfigdots/dotkaliconf.sh` <br />
+*Post Reboot* <br />
+`./kaliconfigdots/reboot-change-kali-user` <br />
+*Configure bluetooth keyboard if this is for a pi!* <br />
+*Run below if pi for screen change for touchscreens! (If needed)* <br />
+`./kaliconfigdots/after-bluetooth-piconf.sh` <br />
+
 .Dotfiles Template
 =================
 
@@ -43,30 +80,3 @@ whatever you want with it without restriction. See `LICENSE.md` for details.
 
 That being said, I would appreciate it if you could maintain a link back to
 Dotbot (or this repository) to help other people discover Dotbot.
-
-# How to connect and edit git from linux
-# By: Nicholas Fisher 
-![image](https://github.com/user-attachments/assets/848e208a-db9a-467f-9e4b-cafdcfa05d5c) <br />
-***Dotbot and connecting my GitHub to my Linux ssh!*** <br />
-**`Connecting to github`** <br />
-ssh-keygen -t ed25519 <br />
-cat ~/.ssh/id_ed25519.pub <br />
-Copy and paste it to the ssh keys section of GitHub <br />
-ssh -T git@github.com (Connect) <br />
-**`Push changes to repo and getting repos to push`** <br />
-git clone git@github.com:FishyStix12/.dotfishingbot.git <br /> (example Git clone of repositories to push updates) <br />
-git add . && git commit -m "init" (After Changes) <br />
-git config --global user.email "user@email.com" (set what email is doing the update) <br />
-git config --global user.name "Laptop" (name of the user doing it) <br />
-(then rerun the git add) <br />
-git push (sometimes you will need to rerun ssh -T git@github.com to run this) <br />
-then edit install.conf.yaml <br />
-`(or dont git push edit in Linux then git push!)`<br />
-
-**`Important Note:`** <br />
-If it won't let you push because they try to enforce a username and password which no longer works in github since 2021. It means you are using an `https URL` instead of an `SSH URL`for your repository instead of the https URL. <br />
-To switch to SSH, do these tasks: <br />
-In dotfishingbot main click `Code -> SSH -> copy` <br />
-git remote set-url origin `what you copied in ssh tab on Github repo` <br />
-
-**To set up dotbot environment for your Kali Linux machine download the repository cd into it and run `./install` switch to home directory and then run `./kaliconfigdots/dotkaliconf.sh`** <br />
