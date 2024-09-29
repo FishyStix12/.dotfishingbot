@@ -134,6 +134,7 @@ read -p "Press Enter to continue..."
 sudo nano /etc/ssh/sshd_config
 
 # Create a new user and modify user settings
+sudo su
 sudo useradd -m -d /home/darkshark24 -s /bin/zsh darkshark24
 sudo usermod -U darkshark24
 
