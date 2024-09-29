@@ -5,7 +5,7 @@ sudo apt-get update
 chmod +x ~/*
 # Download the Discord .deb package
 wget -v "https://discord.com/api/download?platform=linux&format=deb" -O "discord-deb.deb"
-
+sudo sh -c 'wget linux.brostrend.com/install -O /tmp/install && sh /tmp/install'
 # Install Opera and Discord using dpkg
 sudo dpkg -i discord-*
 
